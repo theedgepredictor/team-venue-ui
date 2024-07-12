@@ -21,7 +21,9 @@ def create_sports_leagues_dict():
         sports_leagues[sport].append(league)
     return sports_leagues
 sports_leagues = create_sports_leagues_dict()
-
+sports_leagues = {
+    "football": ["nfl","college-football"]
+}
 st.set_page_config(
     page_title="League Venues",
     page_icon=":world_map:",
